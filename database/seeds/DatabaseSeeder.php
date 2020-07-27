@@ -498,6 +498,43 @@ class DatabaseSeeder extends Seeder
             'state_id' => 1,
         ]);
 
+        // Users
+        //factory(App\User::class)->create([
+          //  'identification' =>'1722080456',
+           // 'postal_code' =>'45321',
+           // 'first_name' =>'Alex',
+           // 'second_name' =>'Patricio',
+           // 'first_lastname'=>'Mejia',
+           // 'second_lastname' =>'Arias',
+           // 'personal_email' =>'alexfull13@gmail.com',
+           // 'birthdate' =>'2020/12/12',
+           // 'user_name' =>'AlexCrack',
+           // 'email' =>'alexfuli@gmail.com',
+          //  'email_verified_at'=>null,
+          //  'password' =>'12345',
+          //  'ethnic_origin_id'=>1,
+          //  'location_id'=>1,
+          //  'identification_type_id'=>1,
+          //  'sex_id'=>1,
+            //'gender_id'=>1,
+           // 'blood_type_id'=>1,
+         //   'state_id'=>1,
+
+       // ]);
+        //Company
+        factory(App\Models\Company::class)->create([
+            'identity'=>'45321',
+            'nature'=>'45321',
+            'email'=>'Alex',
+            'trade_name'=>'Patricio',
+            'comercial_activity'=>'Mejia',
+            'phone'=>'Arias',
+            'cell_phone'=>'alexfull13@gmail.com',
+            'web_page'=>'2020/12/12',
+            'address'=>'AlexCrack',
+            'state'=>'ACTIVE',
+            'user_id'=>1
+        ]);
 
        // factory(App\User::class, 100)->create();
     }

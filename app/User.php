@@ -4,6 +4,7 @@ namespace App;
 
 use App\Models\Attendance;
 use App\Models\Catalogue;
+use App\Models\Company;
 use App\Models\State;
 use App\Models\Teacher;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -113,5 +114,9 @@ class User extends Authenticatable implements Auditable
     public function bloodType()
     {
         return $this->belongsTo(Catalogue::class);
+    }
+    public function company()
+    {
+        return $this->belongsTo(Company::class);
     }
 }
